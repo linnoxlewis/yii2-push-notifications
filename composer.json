@@ -3,9 +3,6 @@
   "description": "Yii2 component for sending push-notifications",
   "type": "package",
   "require": {
-    "yiisoft/yii2": "2.*",
-    "yiisoft/yii2-bootstrap": "^2.0",
-    "linslin/yii2-curl": "*",
     "sngrl/php-firebase-cloud-messaging": "dev-master",
     "sly/notification-pusher": "^2.3"
   },
@@ -16,7 +13,11 @@
       "email": "vosipenko1394@gmail.com"
     }
   ],
-  "minimum-stability" : "dev", 
+  "minimum-stability" : "dev",
+  "prefer-stable": true,
+  "replace": {
+    "linnoxlewis/yii2-push-notifications": "self.version"
+  },
   "autoload": {
     "psr-4": {
       "linnoxlewis\\pushNotifications\\": "src/"
