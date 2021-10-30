@@ -11,7 +11,7 @@ Push notifications components for yii2
             
 	    'topicClass' => linnoxlewis\pushNotifications\topics\Topics::class
 
-	    'notificationAndroidClass' => linnoxlewis\pushNotifications\notifications\ApnsService::class
+	    'notificationIosClass' => linnoxlewis\pushNotifications\notifications\ApnsService::class
 	    
 	    'certificateFilePath' => 'PEM_CERITFICATE_FULL_PATH',
 	    
